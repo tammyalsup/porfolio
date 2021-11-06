@@ -4,8 +4,10 @@
     .search{
       width: 100%;
       position: relative;
-      justify-content: end;
+      justify-content: flex-end;
       display: flex;
+      position: sticky;
+      top: 0;
     }
     .search-button {
         width: 40px;
@@ -76,9 +78,11 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
-    margin-bottom: -40px;
+    margin-bottom: 20px;
     border-bottom: 1px solid black;
     font-family: 'New Tegomin', serif;
+    /* position: sticky;
+    top: 40px; */
 }
 
 .left-column {
@@ -145,7 +149,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .link-wrapper a:hover {
-    color: #bcca99;
+    color: #000;
     letter-spacing: 2px;
 }
 
@@ -171,12 +175,28 @@ h1, h2, h3, h4, h5, h6 {
 .homepage {
     background-image: url(assets/IHHLogoOfficial.jpg);
     padding: 100px;
-    height: 600px;
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: contain;
+    height: 600px;
 }
+    /* test code */
+    /* .homepage {
+        background-image: url(assets/IHHLogoOfficial.jpg);
+        padding: 110
+    px
+    ;
+        background-attachment: scroll;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 1010
+    px
+    ;
+        height: 300
+    px
+    ;
+    } */
 
 .top-heading {
     padding: 1px 20px;
@@ -250,7 +270,20 @@ h1, h2, h3, h4, h5, h6 {
 .scroll-top-container {
     opacity: 1;
     background-color: #fffef8;
-    box-shadow: inset 50px 26px 50px 26px #000;
+    /* box-shadow: inset 50px 26px 50px 26px #000; */
     display: flex;
     justify-content: flex-end;
+}
+html {
+    scroll-behavior: smooth;
+  }
+  .bottom {
+    display: flex;
+    padding-top: 25
+px
+;
+    padding-bottom: 25
+px
+;
+    justify-content: space-between;
 }
