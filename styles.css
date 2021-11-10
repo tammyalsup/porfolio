@@ -71,16 +71,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-wrapper {
     height: 190px;
-    background-color: #3d74a6;
+    background-color: #0066a1;
     color: #000;
     font-size: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 8px 16px;
     margin-bottom: 20px;
     border-bottom: 1px solid black;
     font-family: 'New Tegomin', serif;
+    box-shadow: inset 0px -26px 79px -8px rgb(0 0 0 / 58%);
     /* position: sticky;
     top: 40px; */
 }
@@ -122,6 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 .heart img {
     width: 100px;
     height: 25%;
+    margin-top: 15px;
 }
 .link-wrapper {
    border: 2px solid #000;
@@ -208,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .bottom-heading {
-    background-color: #102e67;
+    background-color: #0066a1;
     color: #cbcb;
     padding: 1px 20px;
     margin-top: 15px;
@@ -219,7 +222,7 @@ h1, h2, h3, h4, h5, h6 {
 /* BLUE BOTTOM */
 .features-section {
     height: 250px;
-    background-color: #3d74a6;
+    background-color: #0066a1;
     border-top: 1px solid black;
     color: #ffffff;
     display: flex;
@@ -259,6 +262,7 @@ h1, h2, h3, h4, h5, h6 {
     transition: 1s;
 }
 
+
 .column :nth-child(2):hover {
     letter-spacing: 1px;
 }
@@ -287,3 +291,34 @@ px
 ;
     justify-content: space-between;
 }
+
+
+/* title for about page */
+.title {
+    height: 75px;
+     font-size: 50px;
+     text-align: center;
+     margin-bottom: -10px;
+     letter-spacing: 20px;
+     font-family: 'Fjalla One', serif;
+     padding-top: 10px;
+     color: #002626;
+
+}
+ 
+/* text for about page*/
+.about-text {
+     height: 500px;
+     text-align: center;
+     /* padding-top: 50px; */
+     font-family: 'Fjalla One', serif;
+     color: #002626;
+     text-decoration: none;
+     font-size: 24px;
+ }
+
+ a {
+     text-decoration: none;
+     color: #fff;
+ }
+ 
